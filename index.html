@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+  </head>
+
+  <body>
+    <!-- HOME -->
+    <div class="header" id="home">
+      <div class="container">
+        <nav>
+          <p class="logo">Madhumitha Venkatesan</p>
+
+          <div class="menu-button" id="menuButton">
+            <i class="uil uil-bars"></i>
+          </div>
+
+          <ul class="nav_links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#digital-marketing">Digital Marketing</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <div class="close-button" id="closeButton" style="display: none">
+                <i class="uil uil-times"></i>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <main>
+          <img src="images/img1.jpg" alt="" />
+          <div class="header-text">
+            <p class="subtitle">
+              Front-End Developer & Digital Marketing Specialist
+            </p>
+            <div class="intro-text">Hey there! I'm <span>Madhumitha</span></div>
+            <a href="images/Madhumitha Resume (1).pdf" download class="btn"
+              >Download Resume</a
+            >
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/img2.jpg" alt="About Image" />
+          </div>
+
+          <div class="about-col-2">
+            <div class="title">About Me</div>
+            <div class="sub-title">My Introduction</div>
+            <br />
+
+            <p>
+              I am a Front-End Developer and Digital Marketing Specialist
+              experienced in building responsive web applications and executing
+              structured marketing strategies.
+              <br /><br />
+              I work on SEO optimization, influencer outreach, press
+              communication, and campaign tracking.
+              <br /><br />
+              I also run my art brand <strong>Pretty Stories</strong>, where I
+              apply branding, content strategy, and audience engagement skills.
+            </p>
+
+            <div class="tab-titles">
+              <div
+                class="tab-links active-link"
+                onclick="opentab(event, 'skills')"
+              >
+                Skills
+              </div>
+              <div class="tab-links" onclick="opentab(event, 'internship')">
+                Internships
+              </div>
+              <div class="tab-links" onclick="opentab(event, 'education')">
+                Education
+              </div>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Front End</span> - HTML, CSS, JavaScript, Angular,
+                  TypeScript
+                </li>
+
+                <li>
+                  <span>Design Tools</span> - Figma, Canva, CorelDraw, Ibis
+                  Paint X
+                </li>
+
+                <li><span>Programming Languages</span> - C, Java</li>
+
+                <li>
+                  <span>Digital Marketing</span> - SEO, Social Media Marketing
+                  (Instagram, LinkedIn, Twitter, Reddit), Influencer Outreach,
+                  Press & Retail Outreach, Email Campaigns, Content Strategy,
+                  Engagement Analysis, Excel Campaign Tracking
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="internship">
+              <ul>
+                <li>
+                  <span>Web Developer</span> - Exposys Data Labs <br />
+                  <i class="uil uil-calendar-alt"></i>03.08.22 - 02.09.22
+                </li>
+                <li>
+                  <span>Web Developer</span> - CodeCasa <br />
+                  <i class="uil uil-calendar-alt"></i>01.09.23 - 01.10.23
+                </li>
+                <li>
+                  <span>UI/UX</span> - CognoRise InfoTech <br />
+                  <i class="uil uil-calendar-alt"></i>01.11.23 - 01.12.23
+                </li>
+                <li>
+                  <span>Web Developer</span> - RaaOnline <br />
+                  <i class="uil uil-calendar-alt"></i>04.03.24 - 12.07.24
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>B.E. in Computer Science and Engineering</span> -
+                  Knowledge Institute Of Technology, Salem <br />
+                  <i class="uil uil-calendar-alt"></i>2021 - 2024
+                </li>
+                <li>
+                  <span>Diploma In Computer Science</span> - Paavai Polytechnic
+                  College
+                  <br />
+                  <i class="uil uil-calendar-alt"></i>2018 - 2021
+                </li>
+                <li><span>Secondary Education</span> - SSRM.HR.SEC.School</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PORTFOLIO -->
+    <div class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="title">Portfolio</div>
+        <div class="sub-title">Frontend Projects</div>
+
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work1.png" alt="" />
+            <div class="layer">
+              <h3>Personal Portfolio Website</h3>
+              <p>
+                Developed responsive portfolio website using HTML, CSS, and
+                JavaScript.
+              </p>
+              <a
+                href="https://glowing-fairy-68ff7f.netlify.app/"
+                target="_blank"
+              >
+                <i class="uil uil-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work2.png" alt="" />
+            <div class="layer">
+              <h3>Expense Tracker Web Application</h3>
+              <p>
+                Built JavaScript-based dynamic expense tracking application with
+                structured UI and DOM manipulation.
+              </p>
+              <a
+                href="https://ornate-syrniki-24df3a.netlify.app/"
+                target="_blank"
+              >
+                <i class="uil uil-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work3.png" alt="" />
+            <div class="layer">
+              <h3>Pretty Stories – Art Brand</h3>
+              <p>
+                Designed and developed responsive art brand website with blog,
+                gallery, and shop sections. Applied SEO and content strategy.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIGITAL MARKETING -->
+    <div class="digital-marketing" id="digital-marketing">
+      <div class="container">
+        <div class="title">Digital Marketing</div>
+        <div class="sub-title">Campaigns & Strategy</div>
+
+        <h3>Influencer & Ambassador Management</h3>
+        <ul>
+          <li>Shortlisted influencers based on engagement metrics</li>
+          <li>Executed structured email outreach campaigns</li>
+          <li>Managed ambassador onboarding process</li>
+          <li>Maintained campaign tracking sheet</li>
+        </ul>
+
+        <h3>Press & Retail Outreach</h3>
+        <ul>
+          <li>Researched press release platforms</li>
+          <li>Contacted retail bookstores via email</li>
+          <li>Drafted campaign copy and follow-ups</li>
+        </ul>
+
+        <h3>SEO & Website Optimization</h3>
+        <ul>
+          <li>Improved SEO keyword structure</li>
+          <li>Optimized order pages and content sections</li>
+        </ul>
+
+        <h3>Campaign Tracking</h3>
+        <ul>
+          <li>Maintained structured Excel sheets</li>
+          <li>Tracked: Contacted → Shortlisted → Confirmed → Onboarded</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <div class="title">Contact Me</div>
+            <div class="social">
+              <a
+                href="https://www.linkedin.com/in/madhumitha-venkatesan-7b6b83241/"
+                target="_blank"
+              >
+                <i class="uil uil-linkedin"></i>
+              </a>
+              <a href="https://www.instagram.com/bymadhu.art/"
+                ><i class="uil uil-instagram"></i
+              ></a>
+              <a
+                href="https://github.com/MadhumithaVenkatesan27"
+                target="_blank"
+              >
+                <i class="uil uil-github"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="scrollTop" class="scroll-top">
+      <i class="uil uil-arrow-up"></i>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
